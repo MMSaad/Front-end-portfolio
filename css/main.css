@@ -1,0 +1,189 @@
+/***
+General
+**/
+
+body {
+    margin: 16px;
+}
+
+.container {
+    width: 100%;
+}
+
+a {
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.upper-cased {
+    text-transform: uppercase;
+}
+
+/**
+Header
+**/
+
+header {
+    width: 100%;
+}
+
+.header-content {
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+img.page-logo {
+    max-width: 120px;
+    display: block;
+    float: left;
+}
+
+.page-title {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    font-family: 'Abel', sans-serif;
+}
+
+.sub-header {
+    font-size: 1.5em;
+    font-family: 'Text Me One', sans-serif;
+}
+
+
+header .header-sperator {
+    width: 100%;
+    height: 2px;
+    background-color: #7d97ad;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    clear: both;
+}
+
+/***
+Sliders
+***/
+
+.slider-container img {
+    max-width: 100%;
+}
+
+
+
+/***
+Features
+***/
+
+h2.features-header {
+    color: #7d97ad;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Text Me One', sans-serif;
+    margin-bottom: 4px;
+    font-size: 2em;
+}
+
+.features {
+    display: flex;
+    flex-flow: wrap;
+    padding: 16px;
+}
+
+
+
+.feature-item {
+    width: 33.33%;
+    margin-bottom: 16px;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.feature-content {
+    box-shadow: 5px 5px 15px lightgrey;
+    padding: 16px;
+    margin: 8px;
+}
+
+.feature-item img {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feature-item-header {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+}
+
+.feature-item a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #2d3c49;
+}
+
+
+
+/***
+Footer
+***/
+
+footer {
+    font-size: 1.0em;
+}
+
+
+
+
+@media only screen and (min-width:900px) {
+    .container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-title {}
+
+    .sub-header {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+    .page-title {
+        font-size: 2.0em;
+    }
+
+    .sub-header {
+        font-size: 1.5em;
+    }
+
+    .feature-item {
+        width: 50%;
+    }
+
+    img.page-logo {
+        max-width: 90px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .feature-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:300px) {
+
+    img.page-logo,
+    .header-content {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+}
